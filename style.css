@@ -1,0 +1,279 @@
+div.logo
+{text-decoration:none;
+position:absolute;
+display:block;
+width:8%;
+float:auto;
+background: rgba(0, 0, 0, 0.5);
+left:0;	
+top:0;
+text-decoration: none;
+padding: 20px;
+font-size:100%;
+text:#ffffff;	
+font-family:Matura MT Script Capitals;
+
+}
+div.logo:hover
+{
+background: rgba(0, 0, 0, 0.8);
+box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+#signup
+{box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+div.pixxel
+{position:absolute;
+background-color:#841357;
+
+top:0%;
+left:0%;
+width:100%;
+height:100%;
+z-index:-1;
+opacity:0.55;
+}
+div.pixel
+{position:absolute;
+top:15%;
+left:0%;
+width:60%;
+height:50%;
+font-family:Matura MT Script Capitals;
+align:right;
+box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.35);
+}
+div.topp
+{position:absolute;
+top:0%;
+left:0%;
+width:100%;
+height:100%;
+background-color:#841357;
+opacity:0.55;
+z-index:-1;
+}
+div.top
+{position:absolute;
+top:0%;
+left:0%;
+width:98%;
+height:15%;
+}
+
+div.sig
+{
+position:absolute;
+padding:40px;
+top:20%;
+left:65%;
+width:40%;
+height:75%;
+}
+
+div.gallery {
+position:absolute;
+top:65%;
+left:0%;
+width:40%;
+height:35%;
+}
+
+div.hide
+{position:absolute;
+top:20%;
+left:20%;
+width:60%;
+height:60%;
+visibility:hidden;
+}
+
+/*Now the styles*/
+* {
+	margin: 0; 
+	padding: 0;
+}
+body {
+	background-image:url('white.jpg'); 
+	font-family: arial, verdana, tahoma;
+}
+
+/*Time to apply widths for accordian to work
+Width of image = 640px
+total images = 5
+so width of hovered image = 640px
+width of un-hovered image = 40px - you can set this to anything
+so total container width = 640 + 40*4 = 800px;
+default width = 800/5 = 160px;
+*/
+
+.accordian {
+position:absolute;
+top:50%;
+left:0%;
+width:60%;
+height:35%;
+	overflow: hidden;
+	
+	/*Time for some styling*/
+	margin: 100px auto;
+	box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+	-webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+	-moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+}
+
+/*A small hack to prevent flickering on some browsers*/
+.accordian ul {
+	width: 2000px;
+	/*This will give ample space to the last item to move
+	instead of falling down/flickering during hovers.*/
+}
+
+.accordian li {
+	position: relative;
+	display: block;
+	width: 160px;
+	float: left;
+	
+	border-left: 1px solid #888;
+	
+	box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+	
+	/*Transitions to give animation effect*/
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	/*If you hover on the images now you should be able to 
+	see the basic accordian*/
+}
+
+/*Reduce with of un-hovered elements*/
+.accordian ul:hover li {width: 40px;}
+/*Lets apply hover effects now*/
+/*The LI hover style should override the UL hover style*/
+.accordian ul li:hover {width: 640px;}
+
+
+.accordian li img {
+	display: block;
+}
+
+/*Image title styles*/
+.image_title {
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	left: 0; bottom: 0;	
+width: 640px;	
+
+}
+.image_title a {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	padding: 20px;
+	font-size: 40px;
+}
+
+div.top2
+{position:absolute;
+top:0%;
+left:0%;
+width:100%;
+height:15%;
+font-family:Matura MT Script Capitals;
+opacity:1;
+display:block;
+float:auto;
+background:rgba(0, 0, 0, 0.6);
+box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+div.topp2
+{position:absolute;
+top:0%;
+left:0%;
+width:100%;
+height:100%;
+background-color:#841357;
+opacity:0.65;
+z-index:-.5;
+}
+
+div.profilepic
+{
+position:absolute;
+top:17%;
+left:1%;
+width:15%;
+height:28%;
+background:#fff;
+border-color:black;
+border:1px;
+box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+div.pic
+{
+position:absolute;
+top:5%;
+left:5%;
+width:90%;
+height:90%;
+background-image:url('unt.jpg');
+}
+
+div.collage
+{
+position:absolute;
+top:0%;
+left:0%;
+width:100%;
+height:60%;
+background-image:url('graffiti.jpg');
+z-index:-3;
+box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+div.name
+{
+position:absolute;
+display:block;
+top:45%;
+left:5%;
+width:100%;
+height:7%;
+color:white;
+background: rgba(0, 0, 0, 0.8);
+box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+div.discussion
+{position:absolute;
+display:block;
+top:60%;
+left:35%;
+width:65%;
+height:40%;
+color:black;
+background:#ccc;
+}
+div.chat
+{position:absolute;
+display:block;
+top:60%;
+left:0%;
+width:35%;
+height:40%;
+color:white;
+background:#841357;
+opacity:0.5;
+}
+div.navigate
+{position:absolute;
+display:block;
+top:60%;
+left:35%;
+width:10%;
+height:40%;
+color:white;
+
+}
